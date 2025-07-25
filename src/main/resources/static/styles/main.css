@@ -257,10 +257,10 @@ form {
 }
 
 label {
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 12px;
   margin-top: 15px;
-  letter-spacing: 0.8px;
+  letter-spacing: 1.2px;
 }
 
 .pass{
@@ -268,7 +268,8 @@ label {
 }
 
 input[type="email"],
-input[type="password"]{
+input[type="password"],
+input[type="user-name"]{
   padding: 14px;
   border-radius: 12px;
   background-color: #F1F4F8;
@@ -507,3 +508,265 @@ button[type="submit"] {
     margin-top: 42px;
 }
 
+.register {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    width: 580px;
+    max-width: 90%;
+    max-height: 110vh;           /* ограничение по высоте */
+    overflow-y: auto;           /* включаем прокрутку */
+}
+
+.modal-content-Reg {
+  position: relative;
+  margin-top: 10px;
+  padding: 15px;
+  height: auto;
+}
+
+/* Typography */
+.register h2 {
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.9px;
+}
+
+.register p {
+  margin-top: 20px;
+  margin-bottom: 28px;
+  font-size: 18px;
+}
+
+.register a {
+  color: #1a4dd7;
+  text-decoration: none;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 40px; /* место под иконку */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+}
+
+.checkbox-wrapper {
+  letter-spacing: 1.5px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  margin-top: 34px;
+  line-height: 1.4;
+  max-width: 100%;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.checkbox-wrapper span {
+  display: inline-block;
+  flex: 1;
+}
+
+.checkbox a{
+    font-size: 18px;
+}
+
+button[type="registration"] {
+  margin-top: 35px;
+  background-color: #2a4ddf;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  letter-spacing: 0.9px;
+  font-weight: bold;
+  height: 57px !important; width: 492px;
+  cursor: pointer;
+}
+
+.modal::-webkit-scrollbar {
+  width: 0;
+}
+
+.mail-reg{
+    margin-top: 35px;
+    font-weight: 500;
+    letter-spacing: 1.9px;
+}
+
+.pass-reg{
+    margin-top: 35px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+.modal-content-Reg .social-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 28px;
+  margin-bottom: 5px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.therard-section{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    height: 750px; width: 100%;
+}
+
+.therard-section h3{
+    margin-top: 26px;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+}
+
+.conteiner-theard-main-section{
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    margin-top: 20px;
+    width: 1400px;
+}
+
+.work-steps-section{
+    margin-top: 24px;
+    height: 325px; width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.invite-friends-section{
+    position: relative;
+    border-radius: 35px;
+    margin-top: 21px;
+    background-color: #1749B3;
+    height: 33%; width: 100%;
+}
+
+.card-of-step{
+    display: flex;
+    height: 100%; width: 418px;
+    border-radius: 35px;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.picture-of-steps{
+    height: 200px; width: 200px;
+    margin-top: -16px;
+    margin-right: -18px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.second-card .picture-of-steps{
+    margin-top: -37px;
+    margin-right: -15px;
+}
+
+.third-card .picture-of-steps{
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+.first-card .discription-of-steps{
+    height: 100%; width: 55%;
+}
+
+.invite-friends-section h6{
+    color: white;
+    margin-top: 48px;
+    margin-left: 88px;
+    font-size: 26px;
+    letter-spacing: 2.4px;
+}
+
+.invite-friends-section .main-text-inv{
+    color: white;
+    margin-top: 31px;
+    margin-left: 87px;
+    font-size: 16px;
+    letter-spacing: 1.15px;
+    line-height: 1.6;
+}
+
+.discription-of-steps h6{
+    margin-top: 163px;
+    margin-left: 43px;
+    letter-spacing: 1.2px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.discription-of-steps p{
+    position: absolute;
+    margin-top: 32px;
+    margin-left: 43.5px;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    font-size: 20px;
+}
+
+.friend-link-block{
+    position: absolute;
+    border-radius: 22px;
+    height: 134px; width: 480px;
+    top: 41px;
+    right: 85px;
+    background-color: #F1F4F8;
+    align-items: center;
+    text-align: center;
+}
+
+.friend-link-block p{
+    color: black;
+    margin-top: 32px;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.friend-link-block button{
+    margin-top: 16px;
+    color: #1749B3;
+    font-size: 20px;
+    font-weight: 550;
+    letter-spacing: 1.7px;
+    text-decoration: underline #1749B3;
+}
+
+.copyFriendLink{
+    margin-left: 10px;
+}

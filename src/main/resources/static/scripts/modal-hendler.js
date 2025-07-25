@@ -1,7 +1,6 @@
 const loginBtn = document.querySelector('.main-logIn');
 const modal = document.getElementById('loginModal');
 const closeBtn = document.getElementById('closeModal');
-
 const overlay = document.querySelector('.overlay');
 
 const registerModal = document.getElementById('registerModal');
