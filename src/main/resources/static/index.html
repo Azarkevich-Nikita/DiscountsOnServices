@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <title>DiscountsOnServices</title>
+</head>
+<body>
+<header class="header">
+    <div class="container header">
+        <div class="logo">
+            <img src="./imges/main-logo.png" alt="Логотип" class="main-logo">
+            <h1 class="main-logo-text">DiscountsOnServices</h1>
+        </div>
+        <nav class="header-nav">
+            <ul class="header-list">
+                <li><a href="#!">Subscriptions</a></li>
+                <li><a href="#!">FAQ</a></li>
+                <li><a href="#!">Support</a></li>
+                <li><a href="#!">About</a></li>
+            </ul>
+        </nav>
+        <div class="header-logos-nav">
+            <img src="./imges/whatsapp-fil.svg" alt="Логотип ватсапа" class="header-whatsapp-logo">
+            <img src="./imges/telegram-fill.svg" alt="Логотип телеграмма" class="header-telegramm-logo">
+        </div>
+        <div class="main-switch-language"><img src="./imges/language-switch.svg" alt="Смена языка" class=""></div>
+        <button class="main-logIn">Log in</button>
+    </div>
+</header>
+<div class="first-section">
+    <div class="container-forst-main-section">
+        <div class="container-two-blocks">
+            <div class="main-big-blok1">
+                <div class="first-block-texts">
+                    <h2>Start enjoying a benefit<br>of up to 50%</h2>
+                    <p>You have always wanted to get the same product at a<br>special price for you, without haggling - and it is yours.</p>
+                    <button class="main-startUse">Start using</button>
+                </div>
+            </div>
+            <div class="main-big-blok2"><img src="./imges/sec-main-blocks.svg" alt=""></div>
+        </div>
+    </div>
+</div>
+<div class="second-section">
+    <h2>Choose a subscription</h2>
+    <div class="conteiner-sec-main-section container">
+        <div class="block-subscription netflix">
+            <div class="discription">
+                <h4>Netflix subscription rates</h4>
+                <div class="discr-and-button">
+                    <p>The constant contributes to the task of the same and<br>thus the intended features and the set relation to the check and set also.</p>
+                    <button class="learn-more">Learn more</button>
+                </div>
+            </div>
+            <div class="picture"><img src="./imges/netflix-logo.svg" alt="netflix"></div>
+        </div>
+        <div class="block-subscription spotify">
+            <div class="discription">
+                <h4>Spotify Premium</h4>
+                <div class="discr-and-button">
+                    <p>The constant contributes to the task of the same and<br>thus the intended features and the set relation to the check and set also.</p>
+                    <button class="learn-more">Learn more</button>
+                </div>
+            </div>
+            <div class="picture"><img src="./imges/spotify-logo.svg" alt="netflix"></div>
+        </div>
+        <div class="block-subscription youtube">
+            <div class="discription">
+                <h4>YouTube Premium </h4>
+                <div class="discr-and-button">
+                    <p>The constant contributes to the task of the same and<br>thus the intended features and the set relation to the check and set also.</p>
+                    <button class="learn-more">Learn more</button>
+                </div>
+            </div>
+            <div class="picture"><img src="./imges/youtube-logo.svg" alt="netflix"></div>
+        </div>
+    </div>
+</div>
+<div class="overlay"></div>
+<div class="modal" id="loginModal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h2>Log in</h2>
+        <p>New user? <a href="#" id="switchToRegister">Create an account</a></p>
+
+        <form>
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your e-mail" />
+
+            <label class="pass">Password</label>
+            <div class="password-wrapper">
+                <input type="password" placeholder="⁎⁎⁎⁎⁎⁎⁎⁎" />
+                <span class="eye-icon"><img src="./imges/eye.svg" alt="Eye"></span>
+            </div>
+
+            <div class="bottom-actions">
+                <a href="#" class="forgot">Forgot password?</a>
+                <button type="submit">Log in</button>
+            </div>
+        </form>
+
+        <div class="divider">
+            <span>Or sign in with</span>
+        </div>
+        
+        <div class="social-icons">
+            <button class="google"><img src="./imges/google-icon.svg" alt="google"></button>
+            <button class="facebook"><img src="./imges/facebook-icon.svg" alt="facebook"></button>
+            <button class="apple"><img src="./imges/apple-icon.svg" alt="appleId"></button>
+        </div>
+        
+        <p class="privacy-note">
+            Protected by reCAPTCHA and subject to the Google <a href="#">Privacy Policy</a> and <a href="#" class="black">Terms of Service</a>.
+        </p>
+
+    </div>
+</div>
+<div class="modal" id="registerModal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeRegister">&times;</span>
+        <h2>Create Account</h2>
+        <p>Already have an account? <a href="#" id="switchToLogin">Log in</a></p>
+
+        <form>
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your e-mail" />
+
+            <label>Password</label>
+            <input type="password" placeholder="Create password" />
+
+            <button type="submit" id="closeRegister">Sign up</button>
+        </form>
+    </div>
+</div>
+
+<script src="./scripts/modal-hendler.js"></script>
+
+</body>
+</html>
