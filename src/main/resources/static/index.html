@@ -114,6 +114,24 @@
         </div>
     </div>
 </div>
+<div class="fourth-section">
+    <div class="container-forst-main-section">
+        <h4>About us</h4>
+        <div class="container-two-blocks four-section">
+            <div class="main-big-blok1">
+                <img src="./imges/main-logo.png" alt="">
+                <div class="first-block-texts">
+                    <p>We offer you a subscription to various media<br>services at the best price.</p>
+                    <p> We have partnered with several companies to help you find the best prices
+                        for your media subscriptions and provide you with the best prices for the Premium subscriptions you want.
+                    </p>
+                    <p style="font-weight: bold;">It's simple, fast and economical.</p>
+                </div>
+            </div>
+            <div class="main-big-blok2"><img src="./imges/fourth-main-block.png" alt=""></div>
+        </div>
+    </div>
+</div>
 <div class="overlay"></div>
 <div class="modal" id="loginModal">
     <div class="modal-content">
@@ -123,17 +141,17 @@
 
         <form>
             <label>Email Address</label>
-            <input type="email" placeholder="Enter your e-mail" />
+            <input type="text" id="email-log" placeholder="Enter your name" required />
 
             <label class="pass">Password</label>
             <div class="password-wrapper">
-                <input type="password" placeholder="⁎⁎⁎⁎⁎⁎⁎⁎" />
+                <input type="password" id="password-log" placeholder="⁎⁎⁎⁎⁎⁎⁎⁎" required />
                 <span class="eye-icon"><img src="./imges/eye.svg" alt="Eye"></span>
             </div>
 
             <div class="bottom-actions">
-                <a href="#" class="forgot">Forgot password?</a>
-                <button type="submit">Log in</button>
+                <a href="#" class="forgot" id="switchforgetPassword">Forgot password?</a>
+                <button type="button" onclick="login()">Log in</button>
             </div>
         </form>
 
@@ -161,7 +179,7 @@
 
         <form>
             <label for="user-name">User name</label>
-            <input type="user-name" id="user-name" placeholder="Enter your name" required />
+            <input type="text" id="username" placeholder="Enter your name" required />
 
             <label for="email" class="mail-reg">Email Address</label>
             <input type="email" id="email" placeholder="Enter your e-mail" required />
@@ -182,7 +200,7 @@
             </label>
 
 
-            <button type="registration">Sign up</button>
+            <button type="registration button" onclick="register()">Sign up</button>
         </form>
 
         <div class="divider">
@@ -197,10 +215,49 @@
     </div>
 </div>
 
+<div class="modal forgotPassword" id="forgetPassword">
+    <span class="close-btn" id="closeforgetPassword">&times;</span>
+    <!-- Шаг 1: Ввод email -->
+    <div class="modal-content-fgPass step step-email active" id="stepEmail">
+      <h2>Forget Password</h2>
+      <p>We will send reset code in this email.</p>
+      <form id="formEmail">
+        <label>Email Address</label>
+        <input type="email" placeholder="name@example.com" required />
+        <button class="forgotThePassword" type="submit">Submit</button>
+      </form>
+    </div>
 
+    <!-- Шаг 2: Ввод кода -->
+    <div class="step step-code" id="stepCode">
+      <h2>Forget Password</h2>
+      <p>We will send reset code in this email.</p>
+      <form id="formCode">
+        <label>Email verification code</label>
+        <div style="display: flex; justify-content: space-between; align-items: center; background-color: #F1F4F8; border-radius: 12px;">
+          <input type="text" placeholder="XXXX" required />
+          <a href="#" id="resendCode" style="margin-right: 15px;">Resend code</a>
+        </div>
+        <button class="forgotThePassword" type="submit" style="width: 100%;">Restore Password</button>
+      </form>
+    </div>
+
+    <!-- Шаг 3: Новый пароль -->
+    <div class="step step-newpass" id="stepNewPass">
+      <h2>Reset Password</h2>
+      <form id="formNewPass">
+        <label>New Password</label>
+        <input type="password" placeholder="Enter new password" required />
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Repeat password" required />
+        <button class="forgotThePassword" type="submit">Set Password</button>
+      </form>
+    </div>
+</div>
 
 
 <script src="./scripts/modal-hendler.js"></script>
+<script src="/scripts/auth.js"></script>
 
 </body>
 </html>

@@ -117,6 +117,21 @@ body{
     width: 83.4%; height: 100%;
 }
 
+.main-big-blok1::selection {
+  color: white;
+  background-color: blue;
+}
+
+.invite-friends-section h6::selection {
+  color: white;
+  background-color: blue;
+}
+
+.invite-friends-section .main-text-inv::selection {
+  color: white;
+  background-color: blue;
+}
+
 .container-two-blocks{
     display: flex;
     justify-content: space-between;
@@ -269,7 +284,8 @@ label {
 
 input[type="email"],
 input[type="password"],
-input[type="user-name"]{
+input[type="user-name"],
+input[type="text"]{
   padding: 14px;
   border-radius: 12px;
   background-color: #F1F4F8;
@@ -769,4 +785,105 @@ button[type="registration"] {
 
 .copyFriendLink{
     margin-left: 10px;
+}
+
+.fourth-section{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 800px; width: 100%;
+}
+
+.container-forst-main-section h4{
+    margin-top: 55px;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    margin-bottom: 30px;
+}
+
+.four-section{
+    margin-top: 30px;
+}
+
+.fourth-section .container-two-blocks{
+    height: 580px;
+}
+
+.four-section .main-big-blok1{
+    background-color: white;
+}
+
+.four-section .first-block-texts{
+    margin-top: 90px;
+    width: 510px;
+}
+
+.four-section .main-big-blok1 img{
+    position: relative;
+    margin-top: 65px;
+    margin-left: -370px;
+    height: 135px; width: 135px;
+}
+
+.four-section .main-big-blok1 p{
+    color: black;
+    font-size: 19px;
+    top: 6px;
+    margin-left: 23px;
+    letter-spacing: 0.85px;
+    position: relative;
+    margin-bottom: 37px;
+}
+
+.forgotPassword{
+    height: 450px;
+}
+
+.modal-content-fgPass{
+    height: 100%; width: 100%;
+    margin-left: 15px;
+}
+
+.modal-content-fgPass h2{
+    font-size: 27px;
+    letter-spacing: 1.7px;
+    font-weight: 600;
+    margin-top: 35px;
+} 
+
+.modal-content-fgPass p{
+    letter-spacing: 0.1px;
+    margin-bottom: 32px;
+}
+
+.forgotThePassword{
+  margin-right: 3px;
+  margin-top: 42px;
+  background-color: #2a4ddf;
+  color: white;
+  height: 58px; width: 493px;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 30px;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.forgotPassword .close-btn{
+    position: absolute;
+    top: 45px; right: 50px;
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
 }
